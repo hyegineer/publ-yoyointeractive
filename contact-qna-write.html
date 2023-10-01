@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
-    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,7 +12,6 @@
     <script src="assets/js/vendor/lodash.min.js"></script>
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
-    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="app">
@@ -103,7 +101,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="media-webzine.html" class="snb-link">
+                      <a href="#" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -269,7 +267,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="media-webzine.html" class="snb-link">
+                      <a href="#" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -332,75 +330,63 @@
           <section class="section">
             <div class="inner">
               <h4 class="conq-ttl">문의사항을 보내주시면 빠른 시일내에 답변드리겠습니다.</h4>
-              <form id="form-qna" action="#">
-                <div class="conq-write-container">
-                  <div class="write-item">
-                    <div class="custom-select-wrap">
-                      <div class="custom-select type01">
-                        <div class="opt">
-                          <span>서비스 희망 항목을 선택해주세요.</span>
-                        </div>
-                        <div class="opt-list-wrap">
-                          <ul class="opt-list-grp">
-                            <li class="opt-list">VR/XR/AR</li>
-                            <li class="opt-list">메타버스</li>
-                            <li class="opt-list">실감형 콘텐츠</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <input type="text" name="service" class="inp custom-select-inp" readonly>
-                      <span class="error-text"></span>
+              <div class="conq-write-container">
+                <div class="write-item">
+                  <div class="custom-select type01">
+                    <div class="opt">
+                      <span>서비스 희망 항목을 선택해주세요.</span>
+                    </div>
+                    <div class="opt-list-wrap">
+                      <ul class="opt-list-grp">
+                        <li class="opt-list">VR/XR/AR</li>
+                        <li class="opt-list">메타버스</li>
+                        <li class="opt-list">실감형 콘텐츠</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="write-item">
-                    <input type="text" name="budget" class="inp type01" placeholder="프로젝트 진행 예산을 입력해주세요.">
-                    <span class="error-text"></span>
-                  </div>
-                  <div class="write-item write-item-col">
-                    <label for="" class="label">
-                      <span>이름</span>
-                      <span class="blue-dot">*</span>
-                    </label>
-                    <input type="text" name="name" class="inp type01" placeholder="홍길동">
-                    <span class="error-text"></span>
-                  </div>
-                  <div class="write-item write-item-col">
-                    <label for="" class="label">
-                      <span>연락처</span>
-                      <span class="blue-dot">*</span>
-                    </label>
-                    <input type="text" name="contact-number" class="inp type01" placeholder="연락처">
-                    <span class="error-text"></span>
-                  </div>
-                  <div class="write-item write-item-col">
-                    <label for="" class="label">
-                      <span>소속</span>
-                      <span class="blue-dot">*</span>
-                    </label>
-                    <input type="text" name="belong" class="inp type01" placeholder="요요인터렉티브">
-                    <span class="error-text"></span>
-                  </div>
-                  <div class="write-item write-item-col">
-                    <label for="" class="label">
-                      <span>이메일</span>
-                      <span class="blue-dot">*</span>
-                    </label>
-                    <input type="text" name="contact-email" class="inp type01" placeholder="id@yourmail.com">
-                    <span class="error-text"></span>
-                  </div>
-                  <div class="write-item">
-                    <label for="" class="label">
-                      <span>내용</span>
-                      <span class="blue-dot">*</span>
-                    </label>
-                    <textarea class="inp type01" name="content" placeholder="원하시는 문의 내용을 자세히 남겨 주시면 순차적으로 연락 드리겠습니다."></textarea>
-                    <span class="error-text"></span>
-                  </div>
                 </div>
-                <div class="center-btn-wrap">
-                  <button type="submit" class="round-btn">문의하기</button>
+                <div class="write-item">
+                  <input type="text" class="inp type01" placeholder="프로젝트 진행 예산을 입력해주세요.">
                 </div>
-              </form>
+                <div class="write-item write-item-col">
+                  <label for="" class="label">
+                    <span>이름</span>
+                    <span class="blue-dot">*</span>
+                  </label>
+                  <input type="text" class="inp type01" placeholder="홍길동">
+                </div>
+                <div class="write-item write-item-col">
+                  <label for="" class="label">
+                    <span>연락처</span>
+                    <span class="blue-dot">*</span>
+                  </label>
+                  <input type="text" class="inp type01" placeholder="연락처">
+                </div>
+                <div class="write-item write-item-col">
+                  <label for="" class="label">
+                    <span>소속</span>
+                    <span class="blue-dot">*</span>
+                  </label>
+                  <input type="text" class="inp type01" placeholder="요요인터렉티브">
+                </div>
+                <div class="write-item write-item-col">
+                  <label for="" class="label">
+                    <span>이메일</span>
+                    <span class="blue-dot">*</span>
+                  </label>
+                  <input type="text" class="inp type01" placeholder="id@yourmail.com">
+                </div>
+                <div class="write-item">
+                  <label for="" class="label">
+                    <span>내용</span>
+                    <span class="blue-dot">*</span>
+                  </label>
+                  <textarea class="inp type01" placeholder="원하시는 문의 내용을 자세히 남겨 주시면 순차적으로 연락 드리겠습니다."></textarea>
+                </div>
+              </div>
+              <div class="center-btn-wrap">
+                <button type="button" class="round-btn">문의하기</button>
+              </div>
             </div>
           </section>
         </div>
@@ -476,70 +462,5 @@
       </footer>
     </div>
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/vendor/jquery.validate.js"></script>
-    <script>
-      $('#form-qna').submit(function(e) {
-        e.preventDefault();
-      }).validate({
-        submitHandler: function(e) {
-          alert("제출 되었습니다.");
-        },
-        errorPlacement: function(error, element) {
-          error.appendTo(element.next(".error-text"));
-        },
-        rules: {
-          service: { // 서비스
-            required: true
-          },
-          budget: { // 예산
-            required: true
-          },
-          name: { // 이름
-            required: true,
-            minlength: 2
-          },
-          'contact-number': { // 연락처
-            required: true,
-            digits: true,
-          },
-          belong: { // 소속
-            required: true,
-          },
-          'contact-email': { // 이메일
-            required: true,
-            email: true
-          },
-          content: { // 내용
-            required: true,
-          },
-        },
-        messages: {
-          service: { // 서비스
-            required: '서비스 희망 항목을 선택해주세요'
-          },
-          budget: { // 예산
-            required: '예산을 입력해주세요'
-          },
-          name: { // 이름
-            required: "이름은 필수 입력입니다",
-            minlength: '최소 2자 이상 입력해주시기 바랍니다'
-          },
-          'contact-number': { // 연락처
-            required: "전화번호를 입력해주세요",
-            digits: '-을 빼고 숫자만 입력해주세요.',
-          },
-          belong: { // 소속
-            required: "소속을 입력해주세요",
-          },
-          'contact-email': { // 이메일
-            required: "이메일은 필수 입력입니다",
-            email: "이메일 형식을 지켜주세요"
-          },
-          content: { // 내용
-            required: '문의내용을 입력해주세요'
-          }
-        },
-      });
-    </script>
   </body>
 </html>
