@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/vendor/documentReady-1.0.js"></script>
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
     <script src="assets/js/vendor/lodash.min.js"></script>
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="app">
@@ -102,7 +103,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="#" class="snb-link">
+                      <a href="media-webzine.html" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -268,7 +269,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="#" class="snb-link">
+                      <a href="media-webzine.html" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -444,31 +445,15 @@
             </button>
           </div>
           <div class="content">
-            <div class="grid-item-grp gig-main-portfolio">
-              <div class="grid-item">
-                <div class="portfolio-card">
-                  <figure class="thumbnail">
-                    <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
-                  </figure>
-                  <div class="ttl-desc-grp">
-                    <h4 class="ttl">RIST 홍보전시관</h4>
-                    <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
-                      인터렉티브 선시 연출 진행</p>
-                    <div class="tags">
-                      <span class="tag">#VR</span>
-                      <span class="tag">#국방</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-item">
-                <div class="portfolio-card">
-                  <div class="card-inner">
+            <div id="swiper-main-pf" class="swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
                     <figure class="thumbnail">
                       <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
                     </figure>
                     <div class="ttl-desc-grp">
-                      <h4 class="ttl">RIST 홍보전시관</h4>
+                      <h4 class="ttl">RIST 홍보전시관 1</h4>
                       <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
                         인터렉티브 선시 연출 진행</p>
                       <div class="tags">
@@ -478,55 +463,165 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="grid-item active">
-                <div class="portfolio-card">
-                  <figure class="thumbnail">
-                    <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
-                  </figure>
-                  <div class="ttl-desc-grp">
-                    <h4 class="ttl">RIST 홍보전시관</h4>
-                    <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
-                      인터렉티브 선시 연출 진행</p>
-                    <div class="tags">
-                      <span class="tag">#VR</span>
-                      <span class="tag">#국방</span>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <div class="card-inner">
+                      <figure class="thumbnail">
+                        <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                      </figure>
+                      <div class="ttl-desc-grp">
+                        <h4 class="ttl">RIST 홍보전시관 2</h4>
+                        <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                          인터렉티브 선시 연출 진행</p>
+                        <div class="tags">
+                          <span class="tag">#VR</span>
+                          <span class="tag">#국방</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="grid-item">
-                <div class="portfolio-card">
-                  <figure class="thumbnail">
-                    <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
-                  </figure>
-                  <div class="ttl-desc-grp">
-                    <h4 class="ttl">RIST 홍보전시관</h4>
-                    <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
-                      인터렉티브 선시 연출 진행</p>
-                    <div class="tags">
-                      <span class="tag">#VR</span>
-                      <span class="tag">#국방</span>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 3</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="grid-item">
-                <div class="portfolio-card">
-                  <figure class="thumbnail">
-                    <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
-                  </figure>
-                  <div class="ttl-desc-grp">
-                    <h4 class="ttl">RIST 홍보전시관</h4>
-                    <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
-                      인터렉티브 선시 연출 진행</p>
-                    <div class="tags">
-                      <span class="tag">#VR</span>
-                      <span class="tag">#국방</span>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 4</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 5</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 1 loop -->
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 6</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <div class="card-inner">
+                      <figure class="thumbnail">
+                        <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                      </figure>
+                      <div class="ttl-desc-grp">
+                        <h4 class="ttl">RIST 홍보전시관 7</h4>
+                        <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                          인터렉티브 선시 연출 진행</p>
+                        <div class="tags">
+                          <span class="tag">#VR</span>
+                          <span class="tag">#국방</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 8</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 9</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide portfolio-card-wrap">
+                  <div class="portfolio-card">
+                    <figure class="thumbnail">
+                      <img src="assets/images/img-temp-portfolio-card01.png" alt="" class="thumbnail-img">
+                    </figure>
+                    <div class="ttl-desc-grp">
+                      <h4 class="ttl">RIST 홍보전시관 10</h4>
+                      <p class="desc">RIST 포항산업연구원 홍보전시관의 <br>
+                        인터렉티브 선시 연출 진행</p>
+                      <div class="tags">
+                        <span class="tag">#VR</span>
+                        <span class="tag">#국방</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 1 loop -->
               </div>
+              <button type="button" class="swiper-button-next main-pf-button main-pf-button-next">
+                <img src="assets/images/icon/icon-swiper-mainpf-next.svg" alt="">
+              </button>
+              <button type="button" class="swiper-button-prev main-pf-button main-pf-button-prev">
+                <img src="assets/images/icon/icon-swiper-mainpf-prev.svg" alt="">
+              </button>
             </div>
 
             <!-- 페이지네이션 -->
@@ -915,6 +1010,28 @@
           </footer>
         </section>
       </div>
+      <div id="main-fixed-btn" class="main-fixed-btn">
+        <button type="button" class="btn">
+          <img src="assets/images/icon/icon-fixed-btn-blog.png" alt="" class="icon icon-blog">
+          <span>블로그</span>
+        </button>
+        <button type="button" class="btn">
+          <img src="assets/images/icon/icon-fixed-btn-insta.png" alt="" class="icon icon-insta">
+          <span>인스타</span>
+        </button>
+        <button type="button" class="btn">
+          <img src="assets/images/icon/icon-fixed-btn-youtube.png" alt="" class="icon icon-youtube">
+          <span>유튜브</span>
+        </button>
+        <button type="button" class="btn">
+          <img src="assets/images/icon/icon-fixed-btn-chat.png" alt="" class="icon icon-chat">
+          <span>문의하기</span>
+        </button>
+        <a id="top-btn" href="#first" class="btn top-btn">
+          <img src="assets/images/icon/icon-fixed-btn-top.png" alt="" class="icon icon-top">
+          <span>TOP</span>
+        </a>
+      </div>
       <footer class="footer ">
         <div class="footer-inner">
           <div class="footer-cont01">
@@ -995,12 +1112,36 @@
           var origin = this;
           if (origin.anchor == 'first' && direction == 'down') {
             $('.header').removeClass('white');
+            $("#main-fixed-btn").addClass("active");
           }
           if (origin.anchor == 'second' && direction == 'up') {
             $('.header').addClass('white');
+            $("#main-fixed-btn").removeClass("active");
           }
         }
       });
+      $("#top-btn").on("click", function() {
+        $('.header').addClass('white');
+        $(this).parent("#main-fixed-btn").removeClass("active");
+      })
+    </script>
+    <script>
+      const swiperMainPf = new Swiper('#swiper-main-pf', {
+        slidesPerView: 4.3,
+        loop: true,
+        centeredSlides: true,
+        loopedSlides: 3,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".main-pf-button-next",
+          prevEl: ".main-pf-button-prev",
+        },
+      });
+    </script>
+    <script>
     </script>
   </body>
 </html>

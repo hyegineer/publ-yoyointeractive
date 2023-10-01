@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,6 +13,7 @@
     <script src="assets/js/vendor/lodash.min.js"></script>
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="app">
@@ -101,7 +103,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="#" class="snb-link">
+                      <a href="media-webzine.html" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -267,7 +269,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="#" class="snb-link">
+                      <a href="media-webzine.html" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -328,6 +330,9 @@
             <div class="inner">
               <div class="pdf-video-wrap">
                 <div class="video"></div>
+
+                <!-- or -->
+                <div class="full-img-wrap"></div>
               </div>
               <div class="pfd-info-wrap">
                 <div class="ttl-wrap">
@@ -353,40 +358,46 @@
                   </div>
                 </div>
               </div>
-              <div class="pfd-img-wrap">
-                <img src="assets/images/img-pfd-01.png" alt="">
-                <img src="assets/images/img-pfd-02.png" alt="">
-                <img src="assets/images/img-pfd-04.png" alt="">
-                <img src="assets/images/img-pfd-03.png" alt="">
-                <img src="assets/images/img-pfd-05.png" alt="">
+
+              <!-- 에디터로 들어간 게시물 영역 -->
+              <div class="editor-result-container">
+                <div class="pfd-img-wrap">
+                  <img src="assets/images/img-pfd-01.png" alt="">
+                  <img src="assets/images/img-pfd-02.png" alt="">
+                  <img src="assets/images/img-pfd-04.png" alt="">
+                  <img src="assets/images/img-pfd-03.png" alt="">
+                  <img src="assets/images/img-pfd-05.png" alt="">
+                </div>
+                <div class="tool-list-grp">
+                  <div class="tool-list">
+                    <div class="tool-card">
+                      <img src="assets/images/img-pfd-tool01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tool-list">
+                    <div class="tool-card">
+                      <img src="assets/images/img-pfd-tool01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tool-list">
+                    <div class="tool-card">
+                      <img src="assets/images/img-pfd-tool01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tool-list">
+                    <div class="tool-card">
+                      <img src="assets/images/img-pfd-tool01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="tool-list">
+                    <div class="tool-card">
+                      <img src="assets/images/img-pfd-tool01.png" alt="">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="tool-list-grp">
-                <div class="tool-list">
-                  <div class="tool-card">
-                    <img src="assets/images/img-pfd-tool01.png" alt="">
-                  </div>
-                </div>
-                <div class="tool-list">
-                  <div class="tool-card">
-                    <img src="assets/images/img-pfd-tool01.png" alt="">
-                  </div>
-                </div>
-                <div class="tool-list">
-                  <div class="tool-card">
-                    <img src="assets/images/img-pfd-tool01.png" alt="">
-                  </div>
-                </div>
-                <div class="tool-list">
-                  <div class="tool-card">
-                    <img src="assets/images/img-pfd-tool01.png" alt="">
-                  </div>
-                </div>
-                <div class="tool-list">
-                  <div class="tool-card">
-                    <img src="assets/images/img-pfd-tool01.png" alt="">
-                  </div>
-                </div>
-              </div>
+
+              <!-- END 에디터로 들어간 게시물 영역 -->
               <div class="center-btn-wrap">
                 <button type="button" class="round-btn">관련 문의하기</button>
               </div>

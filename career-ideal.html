@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,6 +13,7 @@
     <script src="assets/js/vendor/lodash.min.js"></script>
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="app">
@@ -101,7 +103,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="#" class="snb-link">
+                      <a href="media-webzine.html" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -267,7 +269,7 @@
                       </a>
                     </li>
                     <li class="snb-list">
-                      <a href="#" class="snb-link">
+                      <a href="media-webzine.html" class="snb-link">
                         <span>webzine</span>
                       </a>
                     </li>
@@ -343,30 +345,32 @@
               <div class="ttl-grp">
                 <h4 class="ttl">OFFICE</h4>
               </div>
-              <div class="cari-pic-list-grp">
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-01.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-02.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-03.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-04.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-05.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-06.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-07.png" alt="">
-                </div>
-                <div class="cari-pic-list">
-                  <img src="assets/images/img-cari-office-08.png" alt="">
+              <div id="swiper-office" class="swiper cari-pic-list-grp">
+                <div class="swiper-wrapper">
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-01.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-02.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-03.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-04.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-05.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-06.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-07.png" alt="">
+                  </div>
+                  <div class="cari-pic-list swiper-slide">
+                    <img src="assets/images/img-cari-office-08.png" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -444,5 +448,12 @@
       </footer>
     </div>
     <script src="assets/js/ui.js"></script>
+    <script>
+      const swiperOffice = new Swiper("#swiper-office", {
+        slidesPerView: 2.3,
+        centeredSlides: true,
+        spaceBetween: 69
+      });
+    </script>
   </body>
 </html>
