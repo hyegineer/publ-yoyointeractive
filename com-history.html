@@ -806,90 +806,99 @@
           ease: Power3.easeOut
         });
       })
+      // $(".comh-panel1").each(function(q) {
+      //   let tl = gsap.timeline();
+      //   tl.to($(".comh-panel1:eq(" + q + ") .img-section .box"), {
+      //     scrollTrigger: {
+      //       target: $(".comh-panel1:eq(" + q + ")"),
+      //       start() {
+      //         if ($(window).width() >= 1024) {
+      //           return "0 200px";
+      //         } else {
+      //           return "0 100px";
+      //         }
+      //       },
+      //       end() {
+      //         if ($(window).width() >= 1024) {
+      //           return "+=".concat($(".comh-panel1:eq(" + q + ") .img-section .box").height())
+      //         } else {
+      //           return "+=80vh"
+      //         }
+      //       },
+      //       pin: $(".comh-panel1:eq(" + q + ")"),
+      //       scrub: 1,
+      //       onUpdate(self) {
+      //         $(".comh-panel1:eq(" + q + ") .line span").css("height", self.progress.toFixed(3) * 100 + "%");
+      //       },
+      //     },
+      //     y: -$(".comh-panel1:eq(" + q + ") .img-section .box").height(),
+      //   });
+      // });
+      // $(".comh-panel2").each(function(q) {
+      //   let tl = gsap.timeline();
+      //   tl.to($(".comh-panel2:eq(" + q + ") .img-section .box"), {
+      //     scrollTrigger: {
+      //       target: $(".comh-panel2:eq(" + q + ")"),
+      //       start() {
+      //         if ($(window).width() >= 1024) {
+      //           return "0 200px";
+      //         } else {
+      //           return "0 100px";
+      //         }
+      //       },
+      //       end() {
+      //         if ($(window).width() >= 1024) {
+      //           return "+=".concat($(".comh-panel2:eq(" + q + ") .img-section .box").height())
+      //         } else {
+      //           return "+=80vh"
+      //         }
+      //       },
+      //       pin: $(".comh-panel2:eq(" + q + ")"),
+      //       scrub: 1,
+      //       onUpdate(self) {
+      //         $(".comh-panel2:eq(" + q + ") .line span").css("height", self.progress.toFixed(3) * 100 + "%");
+      //       },
+      //     },
+      //     y: -$(".comh-panel2:eq(" + q + ") .img-section .box").height(),
+      //   });
+      // });
       $(".comh-panel1").each(function(q) {
-        let tl = gsap.timeline();
-        tl.to($(".comh-panel1:eq(" + q + ") .img-section .box"), {
-          scrollTrigger: {
-            target: $(".comh-panel1:eq(" + q + ")"),
-            start() {
-              if ($(window).width() >= 1024) {
-                return "0 200px";
-              } else {
-                return "0 100px";
-              }
-            },
-            end() {
-              if ($(window).width() >= 1024) {
-                return "+=".concat($(".comh-panel1:eq(" + q + ") .img-section .box").height())
-              } else {
-                return "+=80vh"
-              }
-            },
-            pin: $(".comh-panel1:eq(" + q + ")"),
-            scrub: 1,
-            onUpdate(self) {
-              $(".comh-panel1:eq(" + q + ") .line span").css("height", self.progress.toFixed(3) * 100 + "%");
-            },
-          },
-          y: -$(".comh-panel1:eq(" + q + ") .img-section .box").height(),
-        });
-      });
+        console.log($(".comh-panel1:eq("+q+") .img-section .box").height());
+      })
       $(".comh-panel2").each(function(q) {
-        let tl = gsap.timeline();
-        tl.to($(".comh-panel2:eq(" + q + ") .img-section .box"), {
-          scrollTrigger: {
-            target: $(".comh-panel2:eq(" + q + ")"),
-            start() {
-              if ($(window).width() >= 1024) {
-                return "0 200px";
-              } else {
-                return "0 100px";
-              }
-            },
-            end() {
-              if ($(window).width() >= 1024) {
-                return "+=".concat($(".comh-panel2:eq(" + q + ") .img-section .box").height())
-              } else {
-                return "+=80vh"
-              }
-            },
-            pin: $(".comh-panel2:eq(" + q + ")"),
-            scrub: 1,
-            onUpdate(self) {
-              $(".comh-panel2:eq(" + q + ") .line span").css("height", self.progress.toFixed(3) * 100 + "%");
-            },
-          },
-          y: -$(".comh-panel2:eq(" + q + ") .img-section .box").height(),
-        });
-      });
+        console.log($(".comh-panel2:eq("+q+") .img-section .box").height());
+      })
       $(".comh-panel3").each(function(q) {
-        let tl = gsap.timeline();
-        tl.to($(".comh-panel3:eq(" + q + ") .img-section .box"), {
-          scrollTrigger: {
-            target: $(".comh-panel3:eq(" + q + ")"),
-            start() {
-              if ($(window).width() >= 1024) {
-                return "0 200px";
-              } else {
-                return "0 100px";
-              }
-            },
-            end() {
-              if ($(window).width() >= 1024) {
-                return "+=".concat($(".comh-panel3:eq(" + q + ") .img-section .box").height())
-              } else {
-                return "+=80vh"
-              }
-            },
-            pin: $(".comh-panel3:eq(" + q + ")"),
-            scrub: 1,
-            onUpdate(self) {
-              $(".comh-panel3:eq(" + q + ") .line span").css("height", self.progress.toFixed(3) * 100 + "%");
-            },
-          },
-          y: -$(".comh-panel3:eq(" + q + ") .img-section .box").height(),
-        });
-      });
+        console.log($(".comh-panel3:eq("+q+") .img-section .box").height());
+      })
+      // $(".comh-panel3").each(function(q) {
+        // let tl = gsap.timeline();
+        // tl.to($(".comh-panel3:eq(" + q + ") .img-section .box"), {
+        //   scrollTrigger: {
+        //     target: $(".comh-panel3:eq(" + q + ")"),
+        //     start() {
+        //       if ($(window).width() >= 1024) {
+        //         return "0 200px";
+        //       } else {
+        //         return "0 100px";
+        //       }
+        //     },
+        //     end() {
+        //       if ($(window).width() >= 1024) {
+        //         return "+=".concat($(".comh-panel3:eq(" + q + ") .img-section .box").height())
+        //       } else {
+        //         return "+=80vh"
+        //       }
+        //     },
+        //     pin: $(".comh-panel3:eq(" + q + ")"),
+        //     scrub: 1,
+        //     onUpdate(self) {
+        //       $(".comh-panel3:eq(" + q + ") .line span").css("height", self.progress.toFixed(3) * 100 + "%");
+        //     },
+        //   },
+        //   y: -$(".comh-panel3:eq(" + q + ") .img-section .box").height(),
+        // });
+      // });
     </script>
   </body>
 </html>
