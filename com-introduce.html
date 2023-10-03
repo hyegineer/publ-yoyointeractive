@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
@@ -14,8 +15,23 @@
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
     <div id="app">
       <div class="header-wrap ">
         <header class="header white">
@@ -76,7 +92,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -165,7 +186,7 @@
                   </div>
                 </li>
                 <li class="opt-list">
-                  <button type="button" class="opt-btn">
+                  <button id="search-open-btn" type="button" class="opt-btn">
                     <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
                     <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
                   </button>
@@ -177,6 +198,14 @@
                   </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
             </div>
           </div>
         </header>
@@ -242,7 +271,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -316,9 +350,9 @@
                 </li>
               </ul>
               <div class="opt-wrap">
-                <button type="button" class="opt-set-btn">
+                <a href="admin-login.html" class="opt-set-btn">
                   <img src="assets/images/icon/icon-admin.png" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -327,13 +361,17 @@
       <div id="fullpage" class="subpage com-introduce-page">
         <div class="section fp-auto-height">
           <div class="subpage-head">
-            <div class="bg"></div>
-            <h3 class="subpage-ttl ttl-white">회사소개</h3>
+            <div class="bg">
+              <video class="bg-video" autoplay loop muted playsinline data-keepplaying>
+                <source src="assets/images/video-intro.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3 class="subpage-ttl ttl-white scroll-change" data-aos="fade-up">회사소개</h3>
           </div>
         </div>
         <section class="section comi-sect-1st">
           <div class="inner">
-            <div class="ttl-grp">
+            <div class="ttl-grp" data-aos="fade-up" data-aos-delay="200">
               <h4 class="ttl">
                 <span class="color-text">요요인터렉티브</span>는 <br>
                 특별한 공간, 특별한 경험을 제공합니다.
@@ -389,22 +427,19 @@
               <h4 class="ttl">
                 CEO 메세지
               </h4>
-              <p class="desc">
-                실감형 메타버스의 패러다임을 끊임없이 혁신하는 <br>
-                Value Creating Company로 거듭나겠습니다.
-              </p>
             </div>
             <div class="content">
               <div class="intro-wrap">
                 <h5 class="intro-ttl">
-                  상상이 현실이 되고, 기술이 재미있는 경험이 되고, <br>
-                  정보의 습득이 즐거운 체험이 됩니다.
+                  실감형 메타버스의 패러다임을 끊임없이 혁신하는 <br>
+                  Value Creating Company로 거듭나겠습니다.
                 </h5>
                 <p class="intro-desc">
-                  요요인터렉티브만의 VR/AR/XR 기술로 참여자의 ‘사고와 경험의 폭’ 을 <br>
-                  확장시킵니다. 관람객이 느끼는 전시 전반을 연출하고 체험을 통한 감성과 경험을 <br>
-                  소중히 합니다. 감성과 감성을 연결하고 사람과 사람을 이으며, 사람과 세상을 이롭게 <br>
-                  연결합니다
+                  상상이 현실이 되고, 기술이 재미있는 경험이 되고, <br>
+                  정보의 습득이 즐거운 체험이 됩니다. <br><br>
+                  요요인터렉티브만의 VR/AR/XR 기술로 참여자의 ‘사고와 경험의 폭’ 을 확장시킵니다. <br>
+                  관람객이 느끼는 전시 전반을 연출하고 체험을 통한 감성과 경험을 소중히 합니다. <br>
+                  감성과 감성을 연결하고 사람과 사람을 이으며, 사람과 세상을 이롭게 연결합니다.
                 </p>
                 <div class="intro-name">
                   <span>요요인터렉티브 대표</span>
@@ -462,11 +497,13 @@
               요요인터렉티브는 직원과 회사, 상호 간의 소통을 통해 <br>더 나은 내일을 위해 노력합니다.
             </h4>
           </div>
+        </section>
+        <section class="section comi-sect-5th">
           <div class="content">
             <img src="assets/images/img-organi.png" alt="" class="organi-img">
           </div>
         </section>
-        <section class="section fp-auto-height">
+        <section class="section fp-auto-height section-footer">
           <footer class="footer ">
             <div class="footer-inner">
               <div class="footer-cont01">
@@ -613,26 +650,27 @@
     <script>
       new fullpage('#fullpage', {
         anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
-        responsiveWidth: 1024,
+        responsiveWidth: 1280,
         afterLoad: function(origin, destination, direction, trigger) {
           var origin = this;
-          if (origin.anchor == 'first' && direction == 'down') {
-            $('.header').removeClass('white');
+          if (destination.anchor === "first") {
+            $('.header').removeClass('bg-white');
           }
-          if (origin.anchor == 'second' && direction == 'up') {
-            $('.header').addClass('white');
+          if (destination.anchor !== "first") {
+            $('.header').addClass('bg-white');
           }
-          if (origin.anchor == 'third' && direction == 'down') {
-            $('.header').addClass('white');
+          if (destination.anchor === "fourth") {
+            $('.header').removeClass('bg-white');
           }
-          if (origin.anchor == 'fourth' && direction == 'up') {
-            $('.header').removeClass('white');
+          // animation
+          if (destination.anchor === "second") {
+            $('.comi-sect-1st').addClass('ani');
           }
-          if (origin.anchor == 'fourth' && direction == 'down') {
-            $('.header').removeClass('white');
+          if (destination.anchor === "third") {
+            $('.comi-sect-2nd').addClass('ani');
           }
-          if (origin.anchor == 'fifth' && direction == 'up') {
-            $('.header').addClass('white');
+          if (destination.anchor === "fourth") {
+            $('.comi-sect-3rd').addClass('ani');
           }
         }
       });

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
@@ -14,8 +15,23 @@
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
     <div id="app">
       <div class="header-wrap ">
         <header class="header white">
@@ -76,7 +92,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -165,7 +186,7 @@
                   </div>
                 </li>
                 <li class="opt-list">
-                  <button type="button" class="opt-btn">
+                  <button id="search-open-btn" type="button" class="opt-btn">
                     <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
                     <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
                   </button>
@@ -177,6 +198,14 @@
                   </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
             </div>
           </div>
         </header>
@@ -242,7 +271,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -316,9 +350,9 @@
                 </li>
               </ul>
               <div class="opt-wrap">
-                <button type="button" class="opt-set-btn">
+                <a href="admin-login.html" class="opt-set-btn">
                   <img src="assets/images/icon/icon-admin.png" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -328,20 +362,26 @@
         <div class="section fp-auto-height">
           <div class="subpage-head">
             <div class="bg">
-              <img src="" alt="" class="bg-img">
+              <video class="bg-video" autoplay loop muted playsinline data-keepplaying>
+                <source src="assets/images/video-bsns-intro.mp4" type="video/mp4">
+              </video>
             </div>
-            <h3 class="subpage-ttl ttl-white">사업영역</h3>
+            <h3 class="subpage-ttl ttl-white scroll-change" data-aos="fade-up">사업영역</h3>
           </div>
         </div>
         <section class="section comb-sect-1st">
-          <div class="ttl-grp">
+          <div class="ttl-grp" data-aos="fade-up" data-aos-delay="200">
             <h4 class="ttl">회사 홍보영상</h4>
           </div>
-          <div class="content">
-            <div class="video-wrap"></div>
+          <div class="content" data-aos="fade-up" data-aos-delay="200">
+            <div class="video-wrap">
+              <video class="video" controls autoplay loop muted playsinline data-keepplaying>
+                <source src="assets/images/video-bsns-main.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section comb-sect-2nd">
           <div class="inner">
             <div class="bsns-list">
               <figure class="picture">
@@ -358,7 +398,7 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section comb-sect-3rd">
           <div class="inner">
             <div class="bsns-list bsns-even-list">
               <figure class="picture">
@@ -375,7 +415,7 @@
             </div>
           </div>
         </section>
-        <section class="section">
+        <section class="section comb-sect-4th">
           <div class="inner">
             <div class="bsns-list">
               <figure class="picture">
@@ -392,7 +432,7 @@
             </div>
           </div>
         </section>
-        <section class="section fp-auto-height">
+        <section class="section fp-auto-height section-footer">
           <footer class="footer ">
             <div class="footer-inner">
               <div class="footer-cont01">
@@ -539,17 +579,30 @@
     <script>
       new fullpage('#fullpage', {
         anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'],
-        responsiveWidth: 1024,
+        responsiveWidth: 1280,
         afterLoad: function(origin, destination, direction, trigger) {
           var origin = this;
-          if (origin.anchor == 'first' && direction == 'down') {
-            $('.header').removeClass('white');
-          }
-          if (origin.anchor == 'second' && direction == 'up') {
+          if (destination.anchor === "first") {
             $('.header').addClass('white');
+            $('.header').removeClass('bg-white');
+          }
+          if (destination.anchor !== "first") {
+            $('.header').addClass('bg-white');
+          }
+          if (destination.anchor === "third") {
+            $(".comb-sect-2nd").addClass("ani");
+          }
+          if (destination.anchor === "fourth") {
+            $(".comb-sect-3rd").addClass("ani");
+          }
+          if (destination.anchor === "fifth") {
+            $(".comb-sect-4th").addClass("ani");
           }
         }
       });
+      if ($(window).width() <= 600) {
+        $(".comb-sect-2nd").addClass("ani");
+      }
     </script>
   </body>
 </html>

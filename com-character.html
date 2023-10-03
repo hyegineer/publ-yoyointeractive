@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
@@ -14,8 +15,23 @@
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
     <div id="app">
       <div class="header-wrap ">
         <header class="header ">
@@ -76,7 +92,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -165,7 +186,7 @@
                   </div>
                 </li>
                 <li class="opt-list">
-                  <button type="button" class="opt-btn">
+                  <button id="search-open-btn" type="button" class="opt-btn">
                     <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
                     <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
                   </button>
@@ -177,6 +198,14 @@
                   </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
             </div>
           </div>
         </header>
@@ -242,7 +271,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -316,9 +350,9 @@
                 </li>
               </ul>
               <div class="opt-wrap">
-                <button type="button" class="opt-set-btn">
+                <a href="admin-login.html" class="opt-set-btn">
                   <img src="assets/images/icon/icon-admin.png" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -326,13 +360,13 @@
       </div>
       <div class="subpage com-character-page">
         <div class="subpage-head">
-          <h3 class="subpage-ttl">요요 에일리언즈</h3>
+          <h3 class="subpage-ttl scroll-change" data-aos="fade-up">요요 에일리언즈</h3>
         </div>
         <div class="subpage-container">
-          <section class="section comcrt-sect-1st">
+          <section class="section comcrt-sect-1st" data-aos="fade-up">
             <img src="assets/images/img-crt-main.png" alt="" class="comcrt-full-img">
           </section>
-          <section class="section comcrt-sect-2nd">
+          <section class="section comcrt-sect-2nd" data-aos="fade-up">
             <div class="inner">
               <div class="comcrt-img-text-wrap">
                 <img src="assets/images/img-crt-02.png" alt="" class="img">
@@ -348,7 +382,7 @@
           <section class="section comcrt-sect-3rd">
             <div class="inner">
               <div class="grid-item-grp gig-comcrt">
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-up">
                   <div class="comcrt-card dodo">
                     <div class="comcrt-card-img">
                       <img src="assets/images/img-crt-dodo.png" alt="">
@@ -369,7 +403,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-up">
                   <div class="comcrt-card mum">
                     <div class="comcrt-card-img">
                       <img src="assets/images/img-crt-mum.png" alt="">
@@ -391,7 +425,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-up">
                   <div class="comcrt-card hollymolly">
                     <div class="comcrt-card-img">
                       <img src="assets/images/img-crt-hollymolly.png" alt="">
@@ -411,7 +445,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-up">
                   <div class="comcrt-card teach">
                     <div class="comcrt-card-img">
                       <img src="assets/images/img-crt-teach.png" alt="">
@@ -432,7 +466,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-up">
                   <div class="comcrt-card bbuyo">
                     <div class="comcrt-card-img">
                       <img src="assets/images/img-crt-bbuyo.png" alt="">
@@ -452,7 +486,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item" data-aos="fade-up">
                   <div class="comcrt-card bboyo">
                     <div class="comcrt-card-img">
                       <img src="assets/images/img-crt-bboyo.png" alt="">
@@ -476,12 +510,12 @@
               </div>
             </div>
           </section>
-          <section class="section comcrt-sect-4th">
+          <section class="section comcrt-sect-4th" data-aos="fade-up">
             <img src="assets/images/img-crt-4th.png" alt="" class="comcrt-full-img">
           </section>
           <section class="section comcrt-sect-5th">
-            <p class="ttl">우리는 요요인터렉티브 캐릭터를 통해 자사의 브랜드 아이덴티티를 <br>만들어나가고 다양한 비즈니스 요소에 적용하여 나갈 예정입니다.</p>
-            <img src="assets/images/img-crt-5th.png" alt="" class="comcrt-full-img">
+            <p class="ttl" data-aos="fade-up">우리는 요요인터렉티브 캐릭터를 통해 자사의 브랜드 아이덴티티를 <br>만들어나가고 다양한 비즈니스 요소에 적용하여 나갈 예정입니다.</p>
+            <img src="assets/images/img-crt-5th.png" alt="" class="comcrt-full-img" data-aos="fade-up">
           </section>
         </div>
       </div>

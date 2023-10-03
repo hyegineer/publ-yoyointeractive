@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
@@ -14,8 +15,23 @@
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
     <div id="app">
       <div class="header-wrap ">
         <header class="header ">
@@ -76,7 +92,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -165,7 +186,7 @@
                   </div>
                 </li>
                 <li class="opt-list">
-                  <button type="button" class="opt-btn">
+                  <button id="search-open-btn" type="button" class="opt-btn">
                     <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
                     <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
                   </button>
@@ -177,6 +198,14 @@
                   </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
             </div>
           </div>
         </header>
@@ -242,7 +271,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -316,9 +350,9 @@
                 </li>
               </ul>
               <div class="opt-wrap">
-                <button type="button" class="opt-set-btn">
+                <a href="admin-login.html" class="opt-set-btn">
                   <img src="assets/images/icon/icon-admin.png" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -326,21 +360,21 @@
       </div>
       <div class="subpage com-ci-page">
         <div class="subpage-head">
-          <h3 class="subpage-ttl">CI</h3>
+          <h3 class="subpage-ttl scroll-change" data-aos="fade-up">CI</h3>
         </div>
         <div class="subpage-container">
           <section class="section comci-sect-1st">
-            <div class="inner">
+            <div class="inner" data-aos="fade-up">
               <figure class="main-ci-box">
                 <img src="assets/images/img-ci-main.png" alt="">
               </figure>
-              <div class="center-btn-wrap">
+              <div class="center-btn-wrap" data-aos="fade-up">
                 <button type="button" class="round-btn">PNG 다운로드</button>
                 <button type="button" class="round-btn btn-navy">AI 다운로드</button>
               </div>
             </div>
           </section>
-          <section class="section comci-sect-2nd">
+          <section data-aos="fade-up" class="section comci-sect-2nd">
             <div class="inner">
               <div class="content">
                 <h4 class="comci-ttl">Word Mark</h4>
@@ -372,7 +406,7 @@
               </div>
             </div>
           </section>
-          <section class="section comci-sect-3rd">
+          <section data-aos="fade-up" class="section comci-sect-3rd">
             <div class="inner">
               <div class="content">
                 <h4 class="comci-ttl">Logotype</h4>
@@ -421,7 +455,7 @@
               </div>
             </div>
           </section>
-          <section class="section comci-sect-4th">
+          <section data-aos="fade-up" class="section comci-sect-4th">
             <div class="inner">
               <div class="content">
                 <h4 class="comci-ttl">Color System</h4>

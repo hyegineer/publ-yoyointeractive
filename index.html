@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
@@ -14,8 +15,23 @@
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
     <div id="app">
       <div class="header-wrap ">
         <header class="header white">
@@ -76,7 +92,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -165,7 +186,7 @@
                   </div>
                 </li>
                 <li class="opt-list">
-                  <button type="button" class="opt-btn">
+                  <button id="search-open-btn" type="button" class="opt-btn">
                     <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
                     <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
                   </button>
@@ -177,6 +198,14 @@
                   </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
             </div>
           </div>
         </header>
@@ -242,7 +271,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -316,9 +350,9 @@
                 </li>
               </ul>
               <div class="opt-wrap">
-                <button type="button" class="opt-set-btn">
+                <a href="admin-login.html" class="opt-set-btn">
                   <img src="assets/images/icon/icon-admin.png" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -328,10 +362,40 @@
 
         <!-- 메인 섹션 01 -->
         <section class="section main-sect">
-          <div class="bg"></div>
+          <div class="bg">
+            <div id="swiper-main" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <video autoplay loop muted playsinline data-keepplaying>
+                    <source src="assets/images/video-intro.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="swiper-slide">
+                  <video autoplay loop muted playsinline data-keepplaying>
+                    <source src="assets/images/video-haebom.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="swiper-slide">
+                  <video autoplay loop muted playsinline data-keepplaying>
+                    <source src="assets/images/video-intro.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="swiper-button-next main-button-next"></div>
+              <div class="swiper-button-prev main-button-prev"></div>
+            </div>
+          </div>
           <div class="inner">
             <div class="ttl-grp">
-              <div class="pagination">1/3</div>
+              <div class="ttl-ctrl">
+                <button type="button" id="swiper-main-button-prev" class="main-button-prev">
+                  <img src="assets/images/icon/icon-main-pagination-prev.svg" alt="">
+                </button>
+                <div class="main-pagination"></div>
+                <button type="button" id="swiper-main-button-next" class="main-button-next">
+                  <img src="assets/images/icon/icon-main-pagination-next.svg" alt="">
+                </button>
+              </div>
               <h2 class="ttl">요요인터렉티브는 <br>특별한 공간, 특별한 경험을 제공합니다.</h2>
             </div>
           </div>
@@ -426,9 +490,10 @@
                   </div>
                 </div>
               </div>
-              <p class="sentence">상상은 현실이 되고, 기술은 재미있는 경험이 되고, 정보의 습득은 즐거운 체험이 됩니다. <br>
-                VR, AR 기술로 참여자의 ‘사고와 경험의 폭’을 확장시켜 감성과 감성을, <br>
-                사람과 사람을, 그리고 사람과 세상을 이롭게 연결합니다.</p>
+              <p class="sentence">
+                상상은 현실이 되고, 기술은 재미있는 경험이 되고, 정보의 습득은 즐거운 체험이 됩니다. <br>
+                VR, AR 기술로 참여자의 ‘사고와 경험의 폭’을 확장시켜 감성과 감성을, 사람과 사람을, 그리고 사람과 세상을 이롭게 연결합니다.
+              </p>
             </div>
           </div>
         </section>
@@ -920,19 +985,19 @@
           <div class="inner">
             <div class="count-list-grp">
               <div class="count-list">
-                <b class="num">8</b>
+                <b id="count01" class="num"></b>
                 <span class="text">년의 업력</span>
               </div>
               <div class="count-list">
-                <b class="num">35</b>
+                <b id="count02" class="num"></b>
                 <span class="text">공공/민간 파트너</span>
               </div>
               <div class="count-list">
-                <b class="num">99</b>
+                <b id="count03" class="num"></b>
                 <span class="text">제공된 콘텐츠</span>
               </div>
               <div class="count-list">
-                <b class="num">10</b>
+                <b id="count04" class="num"></b>
                 <span class="text">인증내역</span>
               </div>
             </div>
@@ -1032,6 +1097,7 @@
           <span>TOP</span>
         </a>
       </div>
+      <div id="main-cursor"></div>
       <footer class="footer ">
         <div class="footer-inner">
           <div class="footer-cont01">
@@ -1103,29 +1169,96 @@
       </footer>
     </div>
     <script src="assets/js/ui.js"></script>
+
+    <!-- 카운트업 -->
+    <script>
+      let count01, count02, count03, count04;
+      $(function() {
+        init_count();
+      })
+      function init_count() {
+        count01 = new countUp.CountUp('count01', 8);
+        count02 = new countUp.CountUp('count02', 35);
+        count03 = new countUp.CountUp('count03', 99);
+        count04 = new countUp.CountUp('count04', 10);
+      }
+    </script>
+
+    <!-- 풀페이지 -->
     <script src="assets/js/vendor/fullpage.js"></script>
     <script>
       new fullpage('#fullpage', {
         anchors: ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh'],
-        responsiveWidth: 1024,
+        responsiveWidth: 1280,
         afterLoad: function(origin, destination, direction, trigger) {
           var origin = this;
-          if (origin.anchor == 'first' && direction == 'down') {
-            $('.header').removeClass('white');
-            $("#main-fixed-btn").addClass("active");
-          }
-          if (origin.anchor == 'second' && direction == 'up') {
+          if (destination.anchor === "first") {
             $('.header').addClass('white');
             $("#main-fixed-btn").removeClass("active");
+            $('.header').removeClass('bg-white');
+          }
+          if (destination.anchor !== "first") {
+            $('.header').addClass('bg-white');
+          }
+          if (origin.anchor === "first" && direction == 'down') {
+            $('.header').removeClass('white');
+            $("#main-fixed-btn").addClass("active");
+            $("#main-cursor").removeClass("show");
+          }
+          if (destination.anchor === "seventh") {
+            count01.start();
+            count02.start();
+            count03.start();
+            count04.start();
           }
         }
       });
-      $("#top-btn").on("click", function() {
-        $('.header').addClass('white');
-        $(this).parent("#main-fixed-btn").removeClass("active");
+    </script>
+
+    <!-- 마우스 커서 -->
+    <script>
+      $("#fullpage .main-sect").on("mousemove", function(e) {
+        var posX = e.clientX;
+        var posY = e.clientY;
+        $("#main-cursor").css("left", posX);
+        $("#main-cursor").css("top", posY);
+        $("#main-cursor").addClass("show");
+        if (posX > ($(window).width() / 2)) {
+          $("#main-cursor").removeClass("cursor-left");
+          $("#main-cursor").addClass("cursor-right");
+        } else {
+          $("#main-cursor").removeClass("cursor-right");
+          $("#main-cursor").addClass("cursor-left");
+        }
+        if (posY <= $(".header").height() + 30) {
+          $("#main-cursor").removeClass("show");
+        } else {
+          $("#main-cursor").addClass("show");
+        }
       })
     </script>
+
+    <!-- 스와이퍼 -->
     <script>
+      const swiperMain = new Swiper("#swiper-main", {
+        slidesPerView: 1,
+        loop: true,
+        effect: "fade",
+        navigation: {
+          nextEl: ".main-button-next",
+          prevEl: ".main-button-prev",
+        },
+        pagination: {
+          el: ".main-pagination",
+          type: "fraction",
+        },
+      });
+      $("#swiper-main-button-next").on("click", function() {
+        swiperMain.slideNext();
+      })
+      $("#swiper-main-button-prev").on("click", function() {
+        swiperMain.slidePrev();
+      })
       const swiperMainPf = new Swiper('#swiper-main-pf', {
         slidesPerView: 4.3,
         loop: true,

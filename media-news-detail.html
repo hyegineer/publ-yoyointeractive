@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요요 인터렉티브</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/vendor/reset.css">
     <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
@@ -14,8 +15,23 @@
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
     <div id="app">
       <div class="header-wrap ">
         <header class="header ">
@@ -76,7 +92,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -165,7 +186,7 @@
                   </div>
                 </li>
                 <li class="opt-list">
-                  <button type="button" class="opt-btn">
+                  <button id="search-open-btn" type="button" class="opt-btn">
                     <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
                     <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
                   </button>
@@ -177,6 +198,14 @@
                   </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
             </div>
           </div>
         </header>
@@ -242,7 +271,12 @@
                   </a>
                   <ul class="snb-list-grp">
                     <li class="snb-list">
-                      <a href="technology.html" class="snb-link">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-sub.html" class="snb-link">
                         <span>보유기술</span>
                       </a>
                     </li>
@@ -316,9 +350,9 @@
                 </li>
               </ul>
               <div class="opt-wrap">
-                <button type="button" class="opt-set-btn">
+                <a href="admin-login.html" class="opt-set-btn">
                   <img src="assets/images/icon/icon-admin.png" alt="">
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -328,22 +362,22 @@
         <div class="subpage-container">
           <section class="section">
             <div class="inner">
-              <div class="mnd-ttl-wrap">
-                <div class="ttl-wrap">
+              <div class="mnd-ttl-wrap scroll-change">
+                <div class="ttl-wrap" data-aos="fade-up">
                   <h3 class="ttl">요요인터렉티브, 가상융합기술기반 재난대응 교육훈련 플랫폼 기술개발 과제 참여… 27일 착수</h3>
                   <span class="date">2022.12.06</span>
                 </div>
-                <div class="sub-ttl-wrap">
+                <div class="sub-ttl-wrap" data-aos="fade-up">
                   <p class="sub-ttl">
                     인공지능(AI)·확장현실(XR) 등 첨단기술을 활용한 재난 대응 훈련시스템 구축 <br>
                     중소조선연구원(주관) 외 13개 연구개발기관 참여··· 5년간 개발
                   </p>
                 </div>
               </div>
-              <div class="full-img-wrap">
+              <div class="full-img-wrap" data-aos="fade-up">
                 <img src="assets/images/img-mnd-01.png" alt="">
               </div>
-              <div class="mnd-text-wrap">
+              <div class="mnd-text-wrap" data-aos="fade-up">
                 <p class="text">
                   요요인터렉티브(대표 이경주)는 해경청과 행정안전부간 다부처 협업으로 추진되는 연구개발사업 '가상융합기술기반 재난대응 교육훈련 플랫폼 연구개발 사업'에 참여한다고 밝혔다. 이번 사업은
                   해양에서의 다양한 단속 및 구조 상황을 공간적 및 물리적으로 구현하기가 어려워 인공지능(AI) ·확장현실(XR) 등 가상공간 관련 기술을 활용해 시·공간적 한계를 극복하고 해경에 필수적인
@@ -365,7 +399,7 @@
               </div>
               <div class="detail-view-ctrl-wrap">
                 <button type="button" class="view-ctrl-btn prev-btn">
-                  <img src="assets/images/icon/icon-prev-gray.png" alt="">
+                  <img src="assets/images/icon/icon-prev-gray.svg" alt="">
                   <div class="text">
                     <b>이전</b>
                     <span>해봄 메타버스 예술관 콘텐츠 구축 용역</span>
@@ -376,7 +410,7 @@
                     <b>다음</b>
                     <span>해봄 메타버스 예술관 콘텐츠 구축 용역</span>
                   </div>
-                  <img src="assets/images/icon/icon-next-gray.png" alt="">
+                  <img src="assets/images/icon/icon-next-gray.svg" alt="">
                 </button>
               </div>
             </div>
