@@ -25,7 +25,9 @@ header,
 footer,
 figure,
 label,
-section {
+section,
+span,
+figcaption {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
