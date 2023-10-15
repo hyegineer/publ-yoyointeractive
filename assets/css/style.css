@@ -32,20 +32,22 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 80px;
-  border: 1px solid #000;
+  border: 1px solid #171E43;
   background-color: #fff;
   transition: all 0.2s;
-  color: #000;
+  color: #171E43;
   font-size: 15rem;
   font-weight: 500;
   padding: 20rem 30rem;
   text-wrap: nowrap;
 }
 .round-btn:hover {
-  background-color: #f2f2f2;
+  background-color: #171E43;
+  color: white;
 }
 .round-btn:active {
-  background-color: #e6e6e6;
+  background-color: #171E43;
+  color: white;
 }
 @media all and (max-width: 1425px) {
   .round-btn {
@@ -71,10 +73,12 @@ html {
   transition: all 0.2s;
 }
 .btn-navy:hover {
-  background-color: #101630;
+  background-color: white;
+  color: #171e43;
 }
 .btn-navy:active {
-  background-color: #0a0d1d;
+  background-color: #f2f2f2;
+  color: #171e43;
 }
 
 .rbtn-list-grp {
@@ -104,20 +108,22 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 80px;
-  border: 1px solid #000;
+  border: 1px solid #171E43;
   background-color: #fff;
   transition: all 0.2s;
-  color: #000;
+  color: #171E43;
   font-size: 18rem;
   font-weight: 500;
   padding: 15.5rem 27rem;
   flex-shrink: 0;
 }
 .rbtn-list-grp .rbtn:hover {
-  background-color: #f2f2f2;
+  background-color: #171E43;
+  color: white;
 }
 .rbtn-list-grp .rbtn:active {
-  background-color: #e6e6e6;
+  background-color: #171E43;
+  color: white;
 }
 @media all and (max-width: 1425px) {
   .rbtn-list-grp .rbtn {
@@ -138,10 +144,12 @@ html {
   transition: all 0.2s;
 }
 .rbtn-list-grp .rbtn.active:hover {
-  background-color: #101630;
+  background-color: white;
+  color: #171e43;
 }
 .rbtn-list-grp .rbtn.active:active {
-  background-color: #0a0d1d;
+  background-color: #f2f2f2;
+  color: #171e43;
 }
 
 @keyframes showContent {
@@ -6682,7 +6690,6 @@ textarea.inp {
 @media all and (max-width: 600px) {
   .comci-content-wrap .desc-text {
     font-size: 15px;
-    line-height: 1.5;
   }
   .comci-content-wrap .desc-text br {
     display: none;
@@ -7479,7 +7486,7 @@ textarea.inp {
 }
 
 .comm-sect-2nd {
-  padding: min(180rem, 180px) 0;
+  padding: min(100rem, 100px) 0;
 }
 
 .comm-list-grp {
@@ -7607,6 +7614,15 @@ textarea.inp {
   .comm-list .map-area {
     max-width: 100%;
     height: max(280rem, 130px);
+  }
+}
+
+.lottie {
+  width: 95%;
+}
+@media all and (max-width: 768px) {
+  .lottie {
+    width: 100%;
   }
 }
 
@@ -10167,6 +10183,9 @@ textarea.inp {
     width: 100%;
     padding: 0 15px;
   }
+}
+.contact-faq-page .center-btn-wrap {
+  margin-top: 40px;
 }
 
 .accordions {
