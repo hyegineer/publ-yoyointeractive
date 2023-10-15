@@ -14,6 +14,7 @@
     <script src="assets/js/vendor/lodash.min.js"></script>
     <script src="assets/js/vendor/gsap.min.js"></script>
     <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/ScrollMagic.min.js"></script>
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
     <script src="assets/js/vendor/countUp.min.js"></script>
     <script src="assets/js/vendor/aos.js"></script>
@@ -88,7 +89,7 @@
                   </ul>
                 </li>
                 <li class="nav-list">
-                  <a href="technology.html" class="nav-link">
+                  <a href="technology-main.html" class="nav-link">
                     <span>technology</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -110,7 +111,7 @@
                   </a>
                 </li>
                 <li class="nav-list">
-                  <a href="#" class="nav-link">
+                  <a href="media-news-list.html" class="nav-link">
                     <span>media center</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -132,7 +133,7 @@
                   </ul>
                 </li>
                 <li class="nav-list">
-                  <a href="#" class="nav-link">
+                  <a href="career-ideal.html" class="nav-link">
                     <span>careers</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -149,7 +150,7 @@
                   </ul>
                 </li>
                 <li class="nav-list">
-                  <a href="#" class="nav-link">
+                  <a href="contact-qna.html" class="nav-link">
                     <span>contact</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -267,7 +268,7 @@
                   </ul>
                 </li>
                 <li class="nav-list">
-                  <a href="technology.html" class="nav-link">
+                  <a href="technology-main.html" class="nav-link">
                     <span>technology</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -289,7 +290,7 @@
                   </a>
                 </li>
                 <li class="nav-list">
-                  <a href="#" class="nav-link">
+                  <a href="media-news-list.html" class="nav-link">
                     <span>media center</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -311,7 +312,7 @@
                   </ul>
                 </li>
                 <li class="nav-list">
-                  <a href="#" class="nav-link">
+                  <a href="career-ideal.html" class="nav-link">
                     <span>careers</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -328,7 +329,7 @@
                   </ul>
                 </li>
                 <li class="nav-list">
-                  <a href="#" class="nav-link">
+                  <a href="contact-qna.html" class="nav-link">
                     <span>contact</span>
                   </a>
                   <ul class="snb-list-grp">
@@ -363,33 +364,26 @@
         <div class="subpage-container">
           <section class="section scroll-change">
             <div class="inner">
-              <div class="pdf-main-wrap" data-aos="fade-up">
-                <div class="video-wrap">
-                  <video class="video" controls autoplay loop muted playsinline data-keepplaying>
-                    <source src="assets/images/video-haebom.mp4" type="video/mp4">
-                  </video>
-                </div>
+              <div class="pfd-main-wrap">
+                <h3 class="pfd-ttl" data-aos="fade-up">해봄 메타버스 예술관 콘텐츠 구축 용역</h3>
+
+                <!-- 동영상일 때 -->
+
+                <!-- <div class="video-wrap" data-aos="fade-up">
+            <video class="video" controls autoplay loop muted playsinline data-keepplaying>
+              <source src="assets/images/video-haebom.mp4" type="video/mp4">
+            </video>
+          </div> -->
 
                 <!-- or -->
 
-                <!-- <div class="full-img-wrap">
-            <img src="assets/images/img-tech-metaverse-first.png" alt="">
-          </div> -->
+                <!-- 이미지일 때 -->
+                <div class="full-img-wrap" data-aos="fade-up" data-aos-delay="200">
+                  <img src="assets/images/img-pfd-example.png" alt="">
+                </div>
               </div>
               <div class="pfd-info-wrap">
-                <div class="ttl-wrap" data-aos="fade-up">
-                  <h3 class="ttl">해봄 메타버스 예술관 콘텐츠 구축 용역</h3>
-                  <span class="date">2022.00.00~<br>2022.12.17</span>
-                </div>
-                <div class="text-wrap" data-aos="fade-up">
-                  <p class="text">
-                    경상남도교육청 예술교육원 해봄아트홀의 독립형 메타버스인 ‘해봄 메타버스’를 구축하였습니다. <br>
-                    해봄 메타버스는 사용자가 직접 아바타를 커스텀하여 메타버스 공간을 즐길 수 있으며, <br>
-                    안드로이드 앱 및 윈도우 PC버전으로 실행이 가능합니다. <br>
-                    총 4개의 전시관에서는 해봄아트홀에서 실제로 진행중인 전시를 메타버스에서 관람 가능하고, <br>
-                    전시관마다 걸려있는 작품을 클릭하면, 크게 확대하여 감상할 수 있습니다! <br>
-                    작품을 여러명이 동시에 관람 가능하며 채팅 및 동작으로 상호작용이 가능하도록 구현하였습니다.
-                  </p>
+                <div class="tag-date-wrap">
                   <div class="tag-list-grp">
                     <div class="tag-list">
                       #메타버스
@@ -398,7 +392,17 @@
                       #해봄아트홀
                     </div>
                   </div>
+                  <span class="date">2022.00.00 ~ 2022.12.17</span>
                 </div>
+                <h4 class="ttl">해봄 메타버스 예술관 콘텐츠 구축 용역</h4>
+                <p class="text">
+                  경상남도교육청 예술교육원 해봄아트홀의 독립형 메타버스인 ‘해봄 메타버스’를 구축하였습니다. <br>
+                  해봄 메타버스는 사용자가 직접 아바타를 커스텀하여 메타버스 공간을 즐길 수 있으며,
+                  안드로이드 앱 및 윈도우 PC버전으로 실행이 가능합니다. <br>
+                  총 4개의 전시관에서는 해봄아트홀에서 실제로 진행중인 전시를 메타버스에서 관람 가능하고,
+                  전시관마다 걸려있는 작품을 클릭하면, 크게 확대하여 감상할 수 있습니다! <br>
+                  작품을 여러명이 동시에 관람 가능하며 채팅 및 동작으로 상호작용이 가능하도록 구현하였습니다.
+                </p>
               </div>
 
               <!-- 에디터로 들어간 게시물 영역 -->

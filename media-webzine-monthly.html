@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요요 인터렉티브</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="assets/css/vendor/aos.css" />
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/vendor/fullpage.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/lodash.min.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/ScrollMagic.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/countUp.min.js"></script>
+    <script src="assets/js/vendor/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <script>
+      $(function() {
+        init_aos();
+      })
+      function init_aos() {
+        AOS.init({
+          duration: 500,
+          easing: "ease-in-out",
+          once: true
+        });
+      }
+    </script>
+    <div id="app">
+      <div class="header-wrap ">
+        <header class="header ">
+          <div class="inner">
+            <h1 class="logo">
+              <a href="index.html" class="logo-link">
+                <img src="assets/images/logo-white.png" alt="" class="logo-white">
+                <img src="assets/images/logo-color.png" alt="" class="logo-color">
+              </a>
+            </h1>
+            <div class="nav-wrap">
+              <ul class="nav-list-grp">
+                <li class="nav-list">
+                  <a href="com-introduce.html" class="nav-link">
+                    <span>company</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="com-introduce.html" class="snb-link">
+                        <span>회사소개</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-business.html" class="snb-link">
+                        <span>사업영역</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-history.html" class="snb-link">
+                        <span>연혁</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-certificate.html" class="snb-link">
+                        <span>인증서</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-ci.html" class="snb-link">
+                        <span>CI</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-character.html" class="snb-link">
+                        <span>캐릭터</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-map.html" class="snb-link">
+                        <span>오시는길</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="technology-main.html" class="nav-link">
+                    <span>technology</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-retain01.html" class="snb-link">
+                        <span>보유기술</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="portfolio-list.html" class="nav-link">
+                    <span>portfolio</span>
+                  </a>
+                </li>
+                <li class="nav-list">
+                  <a href="media-news-list.html" class="nav-link">
+                    <span>media center</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="media-news-list.html" class="snb-link">
+                        <span>news</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="media-sns.html" class="snb-link">
+                        <span>sns</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="media-webzine.html" class="snb-link">
+                        <span>webzine</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="career-ideal.html" class="nav-link">
+                    <span>careers</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="career-ideal.html" class="snb-link">
+                        <span>인재상</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="career-recruit.html" class="snb-link">
+                        <span>채용공고</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="contact-qna.html" class="nav-link">
+                    <span>contact</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="contact-qna.html" class="snb-link">
+                        <span>Q&A</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="contact-qna-write.html" class="snb-link">
+                        <span>1:1문의</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="contact-faq.html" class="snb-link">
+                        <span>faq</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="opt-wrap">
+              <ul class="opt-list-grp">
+                <li class="opt-list opt-lang-btn-wrap">
+                  <button type="button" class="opt-btn">
+                    <img src="assets/images/icon/icon-lang-white.png" alt="" class="icon-white">
+                    <img src="assets/images/icon/icon-lang-black.png" alt="" class="icon-black">
+                  </button>
+                  <div class="opt-lang-grp-area">
+                    <div class="opt-lang-grp">
+                      <button type="button" class="btn">KOR</button>
+                      <button type="button" class="btn">ENG</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="opt-list">
+                  <button id="search-open-btn" type="button" class="opt-btn">
+                    <img src="assets/images/icon/icon-search-white.png" alt="" class="icon-white">
+                    <img src="assets/images/icon/icon-search-black.png" alt="" class="icon-black">
+                  </button>
+                </li>
+                <li class="opt-list">
+                  <button id="nav-open-btn" type="button" class="opt-btn">
+                    <img src="assets/images/icon/icon-hamburger-white.png" alt="" class="icon-white">
+                    <img src="assets/images/icon/icon-hamburger-black.png" alt="" class="icon-black">
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="hd-search" class="inner-search">
+            <div class="search-inp-btn type01">
+              <input type="text" placeholder="검색어를 입력해주세요" class="inp type01">
+              <button type="button" class="btn" onclick="location.href='search-result.html';">
+                <img src="assets/images/icon/icon-search-black.png" alt="">
+              </button>
+            </div>
+          </div>
+        </header>
+        <div id="nav-page" class="nav-page">
+          <div class="nav-container">
+            <div class="nav-bg">
+              <h2 class="nav-bg-ttl">
+                <span>창의적 혁신의 흐름</span>
+                <b class="bold-text">요요인터렉티브</b>
+              </h2>
+            </div>
+            <div class="nav-content">
+              <button id="nav-close-btn" type="button" class="nav-close-btn">
+                <img src="assets/images/icon/icon-close.png" alt="">
+              </button>
+              <img src="assets/images/img-symbol.png" alt="" class="img-symbol">
+              <ul class="nav-list-grp">
+                <li class="nav-list">
+                  <a href="com-introduce.html" class="nav-link">
+                    <span>company</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="com-introduce.html" class="snb-link">
+                        <span>회사소개</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-business.html" class="snb-link">
+                        <span>사업영역</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-history.html" class="snb-link">
+                        <span>연혁</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-certificate.html" class="snb-link">
+                        <span>인증서</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-ci.html" class="snb-link">
+                        <span>CI</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-character.html" class="snb-link">
+                        <span>캐릭터</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="com-map.html" class="snb-link">
+                        <span>오시는길</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="technology-main.html" class="nav-link">
+                    <span>technology</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="technology-main.html" class="snb-link">
+                        <span>주요기술</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="technology-retain01.html" class="snb-link">
+                        <span>보유기술</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="portfolio-list.html" class="nav-link">
+                    <span>portfolio</span>
+                  </a>
+                </li>
+                <li class="nav-list">
+                  <a href="media-news-list.html" class="nav-link">
+                    <span>media center</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="media-news-list.html" class="snb-link">
+                        <span>news</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="media-sns.html" class="snb-link">
+                        <span>sns</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="media-webzine.html" class="snb-link">
+                        <span>webzine</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="career-ideal.html" class="nav-link">
+                    <span>careers</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="career-ideal.html" class="snb-link">
+                        <span>인재상</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="career-recruit.html" class="snb-link">
+                        <span>채용공고</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list">
+                  <a href="contact-qna.html" class="nav-link">
+                    <span>contact</span>
+                  </a>
+                  <ul class="snb-list-grp">
+                    <li class="snb-list">
+                      <a href="contact-qna.html" class="snb-link">
+                        <span>Q&A</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="contact-qna-write.html" class="snb-link">
+                        <span>1:1문의</span>
+                      </a>
+                    </li>
+                    <li class="snb-list">
+                      <a href="contact-faq.html" class="snb-link">
+                        <span>faq</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="opt-wrap">
+                <a href="admin-login.html" class="opt-set-btn">
+                  <img src="assets/images/icon/icon-admin.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subpage media-webzine-page">
+        <div class="subpage-head">
+          <div id="mwz-tab-btn" class="rbtn-list-grp scroll-change" data-aos="fade-up">
+            <a href="media-webzine-monthly.html" class="rbtn active">월간 요요 웹진</a>
+            <a href="media-webzine-weekly.html" class="rbtn">주간 요요 일상</a>
+          </div>
+          <h3 class="subpage-ttl" data-aos="fade-up">월간 요요 웹진</h3>
+          <h4 class="mwz-ttl" data-aos="fade-up">2023년 4월호 [VOL.04]</h4>
+        </div>
+        <div class="subpage-container">
+          <div class="mwz-subpage-container">
+            <section class="section">
+              <div class="mwz-grid-container">
+                <div class="mwz-main-container">
+                  <div class="img-wrap">
+                    <img id="represent-img" src="assets/images/img-mwz-example01.png" alt="">
+                  </div>
+                </div>
+                <div class="grid-item-grp">
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+
+                  <!-- 1 line -->
+
+                  <!-- 1 line -->
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+
+                  <!-- 1 line -->
+
+                  <!-- 1 line -->
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="mwz-card">
+                      <img onclick="showWebzinePopup('webzine-popup', this)" src="assets/images/img-mwz-example01.png" alt="">
+                    </div>
+                  </div>
+
+                  <!-- 1 line -->
+                </div>
+              </div>
+            </section>
+            <div class="pagination">
+              <ul class="pgbtn-list-grp">
+                <li class="pgbtn-list active">
+                  <a href="#" class="pgbtn-link">1</a>
+                </li>
+                <li class="pgbtn-list">
+                  <a href="#" class="pgbtn-link">2</a>
+                </li>
+                <li class="pgbtn-list">
+                  <a href="#" class="pgbtn-link">3</a>
+                </li>
+                <li class="pgbtn-list">
+                  <a href="#" class="pgbtn-link">4</a>
+                </li>
+                <li class="pgbtn-list">
+                  <a href="#" class="pgbtn-link">5</a>
+                </li>
+              </ul>
+              <div class="pgbtn-ctrl-list-grp">
+                <button type="button" class="pgbtn-ctrl-list">
+                  <img src="assets/images/icon/icon-pgbtn-next.png" alt="" class="icon-next">
+                </button>
+                <button type="button" class="pgbtn-ctrl-list">
+                  <img src="assets/images/icon/icon-pgbtn-nnext.png" alt=""" class=" icon-nnext">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 팝업 -->
+      <div class="popup-container">
+        <div id="webzine-popup" class="popup-wrapper">
+          <div class="popup-backdrop" onclick="closeAllPopup();"></div>
+          <div class="popup certifi-popup">
+
+            <!-- 모바일 전용 닫기버튼 -->
+            <div class="mb-close-bar">
+              <button type="button" class="close-button" onclick="closeAllPopup();">
+                <img src="assets/images/icon/icon-close.png" alt="">
+              </button>
+            </div>
+
+            <!-- e 모바일 전용 닫기버튼 -->
+            <div>
+              <img id="represent-popup-img" class="certifi-img" src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- e 팝업 -->
+      <footer class="footer ">
+        <div class="footer-inner">
+          <div class="footer-cont01">
+            <h6 class="logo">
+              <a href="#">
+                <img src="assets/images/logo-color.png" alt="">
+              </a>
+            </h6>
+            <ul class="fnav-list-grp">
+              <li class="fnav-list">
+                <a href="#" class="fnav-link bold-text">요요인터렉티브</a>
+              </li>
+              <li class="fnav-list">
+                <a href="#" class="fnav-link">서비스 이용약관</a>
+              </li>
+              <li class="fnav-list">
+                <a href="#" class="fnav-link color-text">개인정보 처리방침</a>
+              </li>
+              <li class="fnav-list">
+                <a href="#" class="fnav-link">기업소개</a>
+              </li>
+              <li class="fnav-list">
+                <a href="#" class="fnav-link">지원하기</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-cont02">
+            <div class="info-copyright-wrap">
+              <div class="info-wrap">
+                <div class="company-info">
+                  <dl class="list">
+                    <dt>본사</dt>
+                    <dd>서울특별시 송파구 법원로 127 문정대명벨리온 208-210호</dd>
+                  </dl>
+                  <dl class="list">
+                    <dt>지사</dt>
+                    <dd>울산광역시 중구 종가로 406-21, 610호(복산동, 울산글로벌게임센터)</dd>
+                  </dl>
+                  <dl class="list list-space">
+                    <dt>TEL</dt>
+                    <dd>02-404-1306</dd>
+                  </dl>
+                  <dl class="list">
+                    <dt>Email</dt>
+                    <dd>info@yoyointeractive.com</dd>
+                  </dl>
+                </div>
+                <div class="sns-info">
+                  <ul class="sns-list-grp">
+                    <li class="sns-list">
+                      <a href="#" class="sns-link">SNS</a>
+                    </li>
+                    <li class="sns-list">
+                      <a href="#" class="sns-link">유튜브</a>
+                    </li>
+                    <li class="sns-list">
+                      <a href="#" class="sns-link">인스타그램</a>
+                    </li>
+                    <li class="sns-list">
+                      <a href="#" class="sns-link">블로그</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="copyright">© Yoyointeractive Corp. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/ui.js"></script>
+    <script>
+      sticky();
+      function sticky() {
+        function getDuration() {
+          reizeDuration = $('.section').height() - $('.mwz-main-container').height();
+          return reizeDuration;
+        }
+        $(window).on('resize', function() {
+          reizeDuration = $('.section').height() - $('.mwz-main-container').height();
+        })
+        var controller = new ScrollMagic.Controller({
+          globalSceneOptions: {
+            triggerHook: "onLeave"
+          }
+        });
+        var scene = new ScrollMagic.Scene({
+            triggerElement: ".mwz-ttl",
+            duration: getDuration || reizeDuration
+          })
+          .setPin(".mwz-main-container", {
+            pushFollowers: false
+          })
+          .addTo(controller);
+      }
+      function showWebzinePopup(id, target) {
+        var src = target.getAttribute("src");
+        if ($(window).width() > 991) {
+          $("#represent-img").attr("src", src);
+        } else {
+          showPopup(id);
+          $("#represent-popup-img").attr("src", src);
+        }
+      }
+    </script>
+  </body>
+</html>
