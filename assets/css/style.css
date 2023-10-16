@@ -36,9 +36,9 @@ html {
   background-color: #fff;
   transition: all 0.2s;
   color: #171E43;
-  font-size: 15rem;
+  font-size: min(15rem, 15px);
   font-weight: 500;
-  padding: 20rem 30rem;
+  padding: min(20rem, 20px) min(30rem, 30px);
   text-wrap: nowrap;
 }
 .round-btn:hover {
@@ -112,9 +112,9 @@ html {
   background-color: #fff;
   transition: all 0.2s;
   color: #171E43;
-  font-size: 18rem;
+  font-size: min(18rem, 18px);
   font-weight: 500;
-  padding: 15.5rem 27rem;
+  padding: min(15.5rem, 15.5px) min(27rem, 27px);
   flex-shrink: 0;
 }
 .rbtn-list-grp .rbtn:hover {
@@ -7648,9 +7648,9 @@ textarea.inp {
 }
 
 .icon-figure-list {
-  flex: 1 1 calc((100% - 360rem) / 4);
-  width: calc((100% - 360rem) / 4);
-  max-width: calc((100% - 360rem) / 4);
+  flex: 1 1 calc((100% - min(360rem, 360px)) / 4);
+  width: calc((100% - min(360rem, 360px)) / 4);
+  max-width: calc((100% - min(360rem, 360px)) / 4);
 }
 @media all and (max-width: 1500px) {
   .icon-figure-list {
