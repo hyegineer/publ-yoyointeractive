@@ -7370,7 +7370,9 @@ textarea.inp {
 }
 
 .comm-sect-1st {
-  text-align: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .comm-map-img {
