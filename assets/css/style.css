@@ -4800,17 +4800,21 @@ textarea.inp {
   color: white;
   position: absolute;
   top: min(130rem, 130px);
-  left: min(72rem, 72px);
+  left: 0;
+  width: 100%;
   text-align: left;
 }
 @media all and (max-width: 600px) {
   .comi-sect-3rd .ttl-grp {
-    left: 15px;
     top: 25px;
   }
 }
 .comi-sect-3rd .ttl-grp .ttl {
   font-size: min(60rem, 60px);
+  padding-left: min(72rem, 72px);
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 @media all and (max-width: 991px) {
   .comi-sect-3rd .ttl-grp .ttl {
@@ -4820,6 +4824,7 @@ textarea.inp {
 @media all and (max-width: 600px) {
   .comi-sect-3rd .ttl-grp .ttl {
     font-size: 25px;
+    padding: 0 15px;
   }
 }
 .comi-sect-3rd .content {
