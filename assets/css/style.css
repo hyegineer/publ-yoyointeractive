@@ -170,7 +170,7 @@ html {
 }
 .center-btn-wrap .round-btn {
   width: 100%;
-  max-width: max(194rem, 130px);
+  max-width: min(194rem, 194px);
 }
 @media all and (max-width: 768px) {
   .center-btn-wrap .round-btn {
