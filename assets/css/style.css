@@ -10839,9 +10839,9 @@ textarea.inp {
   margin-right: 0;
 }
 .board-body-list .round-btn {
-  font-size: 18rem;
+  font-size: min(18rem, 18px);
   font-weight: 500;
-  padding: 15.5rem 27rem;
+  padding: min(15.5rem, 15.5px) min(27rem, 27px);
 }
 @media all and (max-width: 1425px) {
   .board-body-list .round-btn {
